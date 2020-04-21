@@ -158,6 +158,6 @@ model.add(Conv2DTranspose(n_filters,kernel_size=(64,64),strides=(32,32),use_bias
 #n.loss
 model.add(Dense(1,activation='sigmoid'))
 model.compile(loss='binary_crossentropy',optimizer='adam',metrics=['accuracy'])
-model.build((5,192,192,3))
+model.build((5,227,227,3))
 print(model.summary())
 
